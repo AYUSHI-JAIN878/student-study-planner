@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Student Study Planner</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+
+<h1>📚 Student Study Planner</h1>
+
+<p>
+Plan smarter • Study better • Achieve more
+</p>
+
+<button id="themeBtn">
+🌙 Dark Mode
+</button>
+
+</header>
+
+<div class="dashboard">
+
+<div class="card">
+
+<h2>➕ Add Study Task</h2>
+
+<input
+type="text"
+id="subject"
+placeholder="Subject Name"
+>
+
+<input
+type="text"
+id="task"
+placeholder="Task Name"
+>
+
+<button onclick="addTask()">
+Add Task
+</button>
+
+</div>
+
+<div class="card">
+
+<h2>⏱ Pomodoro Timer</h2>
+
+<div id="timer">
+25:00
+</div>
+
+<button onclick="startTimer()">
+Start
+</button>
+
+<button onclick="resetTimer()">
+Reset
+</button>
+
+</div>
+
+<div class="card">
+
+<h2>📊 Attendance Tracker</h2>
+
+<input
+type="number"
+id="attendance"
+placeholder="Attendance %"
+>
+
+<button onclick="updateAttendance()">
+Update Attendance
+</button>
+
+<p id="attendanceDisplay">
+Current: 0%
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>🚀 Progress Dashboard</h2>
+
+<div class="progress">
+
+<div id="bar"></div>
+
+</div>
+
+<p id="progressText">
+0% Complete
+</p>
+
+</div>
+
+</div>
+
+<div class="card tasks-section">
+
+<h2>📝 Task List</h2>
+
+<ul id="taskList"></ul>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
+
+
+
